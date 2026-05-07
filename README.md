@@ -1,4 +1,4 @@
-# -STM32G4-Bare-Metal-Peripheral-Drivers
+# STM32G4-Bare-Metal-Peripheral-Drivers
 All drivers are written using CMSIS only, with no HAL/LL layers and no external dependencies.
 This repository is ideal for:
 
