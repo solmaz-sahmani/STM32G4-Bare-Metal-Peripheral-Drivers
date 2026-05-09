@@ -12,6 +12,13 @@
 
 static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t Baudrate);
 static uint16_t compute_uart_div(uint32_t PeriphClk, uint32_t Baudrate);
+static void uart_write(int ch);
+
+int __io_putchar(int ch)
+{
+	uart_write(ch);
+	return ch;
+}
 
 void uart2_tx_init(void)
 {
